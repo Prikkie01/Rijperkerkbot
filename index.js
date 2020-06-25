@@ -13,7 +13,7 @@ bot.on("ready", async () => {
 
 bot.on('message', message=>{
    
-  if (message.channel.name === "📨suggesties") {
+  if (message.channel.name === "suggesties") {
     if(message.author.bot) return;
     let embed = new discord.MessageEmbed()
     .setAuthor(message.member.nickname ? message.member.nickname : message.author.tag,message.author.displayAvatarURL())
